@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desigualdad de Riqueza en España: Análisis 1980-2024</title>
+    <meta name="description" content="Análisis en profundidad de la evolución de la desigualdad de riqueza en España de 1980 a 2024, con visualizaciones completas y datos de la Base de Datos Mundial de Desigualdad.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="section-label">Análisis de la Base de Datos Mundial de Desigualdad</div>
+            <h1>Desigualdad de Riqueza en España</h1>
+            <p class="hero-subtitle">Cuatro décadas de disparidad económica: Cómo evolucionó la concentración de riqueza de 1980 a 2024</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-value">60,6%</div>
+                    <p class="stat-label">Participación del 10% superior (2024)</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value secondary">3,2%</div>
+                    <p class="stat-label">Participación del 50% inferior (2024)</p>
+                </div>
+            </div>
+            
+            <button class="btn-primary" onclick="scrollToSection('overview')">
+                Explorar los datos
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section bg-card">
+        <div class="container">
+            <div class="section-label">Resumen Ejecutivo</div>
+            <h2>La Brecha Creciente</h2>
+            
+            <div class="content-text">
+                <p>
+                    La distribución de la riqueza en España ha experimentado una transformación significativa durante 
+                    las últimas cuatro décadas. Este análisis, basado en datos de la Base de Datos Mundial de Desigualdad, 
+                    revela una brecha persistente y cada vez mayor entre los segmentos más ricos y más pobres de la sociedad española.
+                </p>
+                
+                <p>
+                    Entre 1980 y 2024, la participación de la riqueza total en manos del 10% superior de la población 
+                    aumentó de aproximadamente el 52% a casi el 61%, mientras que el 50% inferior vio disminuir su ya 
+                    mínima participación de alrededor del 8% a solo el 3,2%. Esto representa un cambio fundamental en 
+                    cómo se distribuyen los recursos económicos en la sociedad española.
+                </p>
+                
+                <p>
+                    Los datos revelan varios períodos críticos: la transición democrática temprana (1980-1986), la 
+                    integración de España en la Unión Europea (1986-1996), los años del boom económico (1996-2008), 
+                    la crisis financiera (2008-2014), el período de recuperación posterior (2014-2020) y la era 
+                    post-pandemia (2020-2024). Cada era dejó marcas distintas en la distribución de la riqueza nacional.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Findings Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-label text-center">Hallazgos Clave</div>
+            <h2 class="text-center">Lo que Revelan los Datos</h2>
+            
+            <div class="findings-grid">
+                <div class="finding-card">
+                    <div class="finding-icon">📈</div>
+                    <h3>Concentración Creciente</h3>
+                    <p>El 10% superior aumentó su participación en la riqueza en <strong>8,5 puntos porcentuales</strong> en 44 años.</p>
+                    <div class="finding-stat">+16% aumento relativo</div>
+                </div>
+                
+                <div class="finding-card">
+                    <div class="finding-icon">📉</div>
+                    <h3>Declive de la Mitad Inferior</h3>
+                    <p>El 50% inferior perdió <strong>4,9 puntos porcentuales</strong> de su ya mínima participación en la riqueza.</p>
+                    <div class="finding-stat">-61% declive relativo</div>
+                </div>
+                
+                <div class="finding-card">
+                    <div class="finding-icon">⚠️</div>
+                    <h3>Impacto de las Crisis</h3>
+                    <p>Las crisis de 2008 y 2020 <strong>aceleraron la desigualdad</strong>, con efectos duraderos.</p>
+                    <div class="finding-stat">Los más vulnerables, los más afectados</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wealth Evolution Chart -->
+    <section id="wealth-evolution" class="section bg-card">
+        <div class="container">
+            <div class="section-label">1980 - 2024</div>
+            <h2>Evolución de la Desigualdad de Riqueza</h2>
+            <p class="section-description">
+                Las trayectorias divergentes de las participaciones del 10% superior y el 50% inferior 
+                ilustran la transformación fundamental del panorama económico español.
+            </p>
+            
+            <div class="chart-container fade-in-up">
+                <img src="images/wealth_inequality_evolution.png" alt="Gráfico que muestra la evolución de la desigualdad de riqueza en España de 1980 a 2024">
+            </div>
+            
+            <div class="chart-interpretation">
+                <h4>Interpretación del Gráfico</h4>
+                <p>
+                    La línea roja (10% superior) muestra una tendencia general al alza con una notable aceleración 
+                    después de 2008 y 2020, mientras que la línea azul (50% inferior) demuestra un declive constante, 
+                    particularmente pronunciado durante los años de crisis financiera y pandemia. La brecha entre estas 
+                    líneas representa la magnitud de la desigualdad de riqueza en la sociedad española.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top 1% Concentration -->
+    <section id="top1-concentration" class="section">
+        <div class="container">
+            <div class="section-label">Análisis de Ultra-Ricos</div>
+            <h2>El 1% Superior: Concentración Extrema</h2>
+            <p class="section-description">
+                Mientras que el 10% superior posee la mayoría de la riqueza, la concentración dentro del 
+                1% superior revela patrones de desigualdad aún más dramáticos.
+            </p>
+            
+            <div class="chart-container fade-in-up">
+                <img src="images/top1_wealth_concentration.png" alt="Gráfico que muestra la concentración de riqueza del 1% superior en España">
+            </div>
+            
+            <div class="two-column">
+                <div>
+                    <h4>Del 20% al 26,5%</h4>
+                    <p>
+                        El 1% superior de la población aumentó su participación en la riqueza total de aproximadamente 
+                        el 20,7% en 1980 al 26,5% en 2024. Esto significa que una de cada cien personas en España 
+                        controla más de una cuarta parte de toda la riqueza de la nación.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4>Tendencia Acelerada</h4>
+                    <p>
+                        La línea de tendencia muestra una trayectoria ascendente consistente con un aumento promedio 
+                        de 0,13 puntos porcentuales por año. Esta aceleración se hizo particularmente pronunciada 
+                        después de 2008, lo que sugiere que las crisis económicas benefician desproporcionadamente 
+                        a los ultra-ricos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Income vs Wealth Comparison -->
+    <section id="income-comparison" class="section bg-card">
+        <div class="container">
+            <div class="section-label">Análisis Comparativo</div>
+            <h2>Desigualdad de Riqueza vs Ingresos</h2>
+            <p class="section-description">
+                Si bien la desigualdad de ingresos es preocupante, la desigualdad de riqueza en España es 
+                significativamente más extrema, revelando disparidades económicas estructurales más profundas.
+            </p>
+            
+            <div class="chart-container fade-in-up">
+                <img src="images/wealth_vs_income_comparison.png" alt="Comparación de desigualdad de riqueza e ingresos">
+            </div>
+            
+            <div class="comparison-cards">
+                <div class="comparison-card wealth">
+                    <h4>Desigualdad de Riqueza</h4>
+                    <ul>
+                        <li>El 10% superior posee el 60,6% de la riqueza total (2024)</li>
+                        <li>El 50% inferior posee solo el 3,2% de la riqueza</li>
+                        <li>Ratio de 19:1 entre los grupos superior e inferior</li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-card income">
+                    <h4>Desigualdad de Ingresos</h4>
+                    <ul>
+                        <li>El 10% superior gana el 37% del ingreso total (2024)</li>
+                        <li>El 50% inferior gana el 19,7% del ingreso</li>
+                        <li>Ratio de 1,9:1 - menos extremo que la riqueza</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historical Context -->
+    <section id="historical-context" class="section">
+        <div class="container">
+            <div class="section-label">Contexto Histórico</div>
+            <h2>Cuatro Décadas de Cambio Económico</h2>
+            <p class="section-description">
+                La desigualdad de riqueza en España no puede entenderse sin considerar las principales 
+                transiciones económicas y políticas que moldearon estas cuatro décadas.
+            </p>
+            
+            <div class="chart-container fade-in-up">
+                <img src="images/historical_periods_analysis.png" alt="Evolución de desigualdad a través de períodos históricos">
+            </div>
+            
+            <div class="historical-timeline">
+                <div class="timeline-item">
+                    <h4>1980-1986: Democracia Temprana</h4>
+                    <p>
+                        Tras la dictadura de Franco, la transición de España a la democracia coincidió con una 
+                        distribución de riqueza relativamente estable. El 10% superior poseía alrededor del 52% 
+                        de la riqueza, una concentración alta pero aún no extrema.
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>1986-1996: Integración en la UE</h4>
+                    <p>
+                        La entrada de España en la Unión Europea trajo modernización y crecimiento económico, pero 
+                        también el comienzo de las tendencias de concentración de riqueza. La liberalización financiera 
+                        y el desarrollo inmobiliario favorecieron a los propietarios de activos.
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>1996-2008: Boom Económico</h4>
+                    <p>
+                        El boom de la construcción y el sector inmobiliario creó una enorme riqueza para propietarios 
+                        y promotores. Aunque el empleo creció, la riqueza se acumuló desproporcionadamente en la cima, 
+                        con el 10% superior alcanzando el 56% en 2008.
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>2008-2014: Crisis Financiera</h4>
+                    <p>
+                        La crisis financiera global golpeó a España particularmente duro. Mientras el desempleo se 
+                        disparaba y la clase media sufría, la concentración de riqueza se aceleró dramáticamente. 
+                        El 50% inferior vio colapsar su participación del 6% a menos del 4%.
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>2014-2020: Período de Recuperación</h4>
+                    <p>
+                        La recuperación económica trajo crecimiento del PIB y caída del desempleo, pero la desigualdad 
+                        de riqueza continuó empeorando. El 10% superior alcanzó casi el 60% de la riqueza total, mientras 
+                        que el 50% inferior permaneció por debajo del 3,5%.
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>2020-2024: Era Post-Pandemia</h4>
+                    <p>
+                        La pandemia de COVID-19 y sus consecuencias económicas continuaron la tendencia de concentración 
+                        de riqueza. El 10% superior alcanzó el 60,6% en 2024, mientras que el 50% inferior se mantuvo 
+                        en el 3,2%, demostrando que las políticas de recuperación no abordaron la desigualdad estructural.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inequality Gap -->
+    <section id="inequality-gap" class="section bg-card">
+        <div class="container">
+            <div class="section-label">Midiendo la División</div>
+            <h2>La Brecha que se Amplía</h2>
+            <p class="section-description">
+                La diferencia entre las participaciones de riqueza superiores e inferiores proporciona 
+                una medida clara de la evolución de la desigualdad económica.
+            </p>
+            
+            <div class="chart-container fade-in-up">
+                <img src="images/inequality_gap.png" alt="Gráfico de la brecha de desigualdad">
+            </div>
+            
+            <div class="insight-box">
+                <h4>Perspectiva Crítica</h4>
+                <p>
+                    La brecha de riqueza (diferencia entre el 10% superior y el 50% inferior) ha crecido de 
+                    aproximadamente 44 puntos porcentuales en 1980 a más de 57 puntos porcentuales en 2024. 
+                    Este aumento de 13 puntos representa una reestructuración fundamental del poder económico 
+                    en la sociedad española, con la riqueza cada vez más concentrada en menos manos mientras 
+                    la participación de la mayoría disminuye.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Income Evolution Chart -->
+    <section id="income-evolution" class="section">
+        <div class="container">
+            <div class="section-label">1980 - 2024</div>
+            <h2>Evolución de la Desigualdad de Ingresos</h2>
+            <p class="section-description">
+                Aunque la desigualdad de ingresos es menos extrema que la de riqueza, también muestra 
+                una tendencia preocupante hacia mayor concentración.
+            </p>
+            
+            <div class="chart-container fade-in-up">
+                <img src="images/income_inequality_evolution.png" alt="Gráfico de evolución de desigualdad de ingresos">
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="section bg-card">
+        <div class="container">
+            <div class="section-label">Metodología y Fuentes de Datos</div>
+            <h2>Acerca de Este Análisis</h2>
+            
+            <h3>Fuente de Datos</h3>
+            <p>
+                Todos los datos presentados en este análisis provienen de la <strong>Base de Datos Mundial de 
+                Desigualdad (WID.world)</strong>, una base de datos de acceso abierto mantenida por una red 
+                internacional de investigadores. WID.world combina cuentas nacionales, datos de encuestas y 
+                registros fiscales para proporcionar estadísticas integrales sobre desigualdad.
+            </p>
+            
+            <h3>Indicadores Analizados</h3>
+            <ul class="indicators-list">
+                <li><strong>Participación en la Riqueza:</strong> Porcentaje de la riqueza personal neta total en manos de diferentes grupos de población</li>
+                <li><strong>Participación en los Ingresos:</strong> Porcentaje del ingreso nacional total antes de impuestos ganado por diferentes grupos</li>
+                <li><strong>Grupos de Población:</strong> 1% superior, 10% superior, 40% medio y 50% inferior</li>
+            </ul>
+            
+            <h3>Limitaciones</h3>
+            <p>Aunque WID.world proporciona los datos de desigualdad más completos disponibles, deben señalarse varias limitaciones:</p>
+            <ul class="limitations-list">
+                <li>Los datos de riqueza se basan en estimaciones que combinan múltiples fuentes con fiabilidad variable</li>
+                <li>La riqueza oculta en paraísos fiscales puede subestimar las participaciones de los percentiles superiores</li>
+                <li>La disponibilidad de datos y la metodología varían entre períodos de tiempo</li>
+                <li>Las variaciones regionales dentro de España no se capturan en los agregados nacionales</li>
+                <li>Los datos de 2021-2024 son proyecciones basadas en tendencias observadas</li>
+            </ul>
+            
+            <div class="reference-box">
+                <p class="reference-label">Referencia</p>
+                <p>
+                    Base de Datos Mundial de Desigualdad. <em>Datos de Desigualdad en España (1980-2024)</em>. 
+                    Disponible en: <a href="https://wid.world/country/spain/" target="_blank" rel="noopener noreferrer">
+                        wid.world/country/spain
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Visualización de datos y análisis por Manus AI • Diciembre 2024</p>
+            <p class="footer-secondary">
+                Fuente de datos: Base de Datos Mundial de Desigualdad (WID.world) • Licencia Creative Commons
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
